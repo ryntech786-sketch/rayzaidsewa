@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAYZA ID SEWA | Official Indian Civic ID & Document Guide</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Cinzel for Luxury Royalty Branding -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rayzaBlue: '#1A56DB',
+            rayzaBlueDark: '#103ea8',
+            rayzaBlueLight: '#EBF2FF',
+            rayzaGold: '#D4AF37',
+            rayzaGoldLight: '#FBF5E6',
+            rayzaGoldDark: '#997B20',
+            rayzaDark: '#0B0F19',
+            rayzaSlate: '#1F2937',
+            rayzaGray: '#F9FAFB'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+            urdu: ['Noto Nastaliq Urdu', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Hide Netlify injected badge if present */
+    div[data-netlify-badge],
+    .netlify-badge,
+    a[href*="netlify.com"][style*="position: fixed"],
+    iframe[src*="netlify"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    @keyframes goldGlow {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.35)); }
+      50% { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.75)); }
+    }
+    .animate-gold-glow {
+      animation: goldGlow 3s ease-in-out infinite;
+    }
+    
+    @keyframes progressAnim {
+      0% { width: 0%; }
+      50% { width: 70%; }
+      100% { width: 100%; }
+    }
+    .splash-progress-bar {
+      animation: progressAnim 1.6s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    @media print {
+      body * { visibility: hidden; }
+      #modal-content, #modal-content * { visibility: visible; }
+      #modal-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+      }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-[#F8FAFC] text-rayzaDark font-sans antialiased selection:bg-rayzaBlue selection:text-white min-h-screen flex flex-col">
+
+  <!-- ============================================================== -->
+  <!-- 1. LUXURY SPLASH ENTRANCE SCREEN (WHITE + GOLD + LOGO.PNG)     -->
+  <!-- ============================================================== -->
+  <div id="splashScreen" class="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center transition-opacity duration-700 select-none px-6">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(251,245,230,0.85)_0%,_rgba(255,255,255,1)_70%)] pointer-events-none"></div>
+
+    <div class="relative z-10 flex flex-col items-center text-center max-w-md w-full">
+      <div class="w-32 h-32 md:w-40 md:h-40 relative animate-gold-glow mb-6 flex items-center justify-center p-3 rounded-3xl bg-white border border-amber-200/80 shadow-[0_12px_36px_rgba(212,175,55,0.22)]">
+        <img src="logo.png" alt="RAYZA PRO" class="max-h-full max-w-full object-contain filter drop-shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/160x160/111827/D4AF37?text=RAYZA+PRO';">
+      </div>
+
+      <h1 class="font-serif tracking-[0.25em] text-2xl md:text-3xl font-extrabold text-[#997B20] drop-shadow-sm uppercase mb-1">
+        RAYZA PRO
+      </h1>
+      <p class="text-xs uppercase tracking-[0.35em] text-gray-500 font-semibold mb-6">
+        CIVIC SEWA &amp; DOCUMENT ECOSYSTEM
+      </p>
+
+      <div class="w-56 h-1.5 bg-gray-100 rounded-full overflow-hidden p-[1px] border border-amber-200/60 shadow-inner">
+        <div class="h-full bg-gradient-to-r from-amber-300 via-amber-500 to-amber-600 rounded-full splash-progress-bar"></div>
+      </div>
+      <p class="text-[11px] text-gray-400 tracking-wider mt-3 font-medium">Securing Direct Citizen Navigation...</p>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 2. STICKY VERIFIED HEADER + 12-LANGUAGE TRANSLATOR            -->
+  <!-- ============================================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 transition-all shadow-sm">
+    <div class="bg-gradient-to-r from-blue-900 via-rayzaBlue to-blue-800 text-white text-xs py-2 px-4 text-center flex items-center justify-center gap-2 font-medium">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      <span id="headerNotice">🛡️ 100% Truth-Guided Official Portals: Stop paying unauthorized cyber-café & middleman scams.</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <div class="w-12 h-12 bg-white rounded-xl p-1 flex items-center justify-center border border-amber-300 shadow-md overflow-hidden">
+          <img src="logo.png" alt="RAYZA PRO" class="max-h-full max-w-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/48x48/111827/D4AF37?text=RP';">
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-serif font-black tracking-wider text-xl text-rayzaDark">RAYZA</span>
+            <span class="bg-amber-100 text-[#926c05] font-bold text-[10px] tracking-widest px-2 py-0.5 rounded-full border border-amber-300">PRO SUITE</span>
+          </div>
+          <span class="text-xs font-semibold text-rayzaBlue tracking-wide flex items-center gap-1">
+            <span id="brandSubTag">ID SEWA (नागरिक सेवा पोर्टल)</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- 12 Indian Languages Selector -->
+      <div class="flex items-center gap-3">
+        <div class="relative flex items-center bg-gray-50 border border-gray-300 rounded-lg px-2.5 py-1.5 focus-within:ring-2 focus-within:ring-rayzaBlue transition">
+          <svg class="w-4 h-4 text-rayzaBlue mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <select id="langSelect" onchange="changeLanguage(this.value)" class="bg-transparent text-xs sm:text-sm font-semibold text-rayzaDark focus:outline-none cursor-pointer">
+            <option value="en">English (English)</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+            <option value="mr">मराठी (Marathi)</option>
+            <option value="ur">اردو (Urdu)</option>
+            <option value="bn">বাংলা (Bengali)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            <option value="gu">ગુજરાતી (Gujarati)</option>
+            <option value="ml">മലയാളം (Malayalam)</option>
+            <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+            <option value="or">ଓଡ଼ିଆ (Odia)</option>
+          </select>
+        </div>
+
+        <button onclick="openAntiFraudModal()" class="hidden sm:inline-flex items-center gap-1.5 bg-white border border-rose-200 text-rose-700 px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-rose-50 transition shadow-sm">
+          <svg class="w-4 h-4 text-rose-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+          <span id="scamAlertBtnText">Agent Scam Alert</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================== -->
+  <!-- 3. HERO SEARCH & ZERO-FLUFF CIVIC DIRECTORY                    -->
+  <!-- ============================================================== -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+    
+    <div class="text-center max-w-3xl mx-auto mb-10 pt-4">
+      <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full text-rayzaBlue text-xs font-bold tracking-wide uppercase mb-3">
+        <span>🇮🇳 India's Public Knowledge Portal</span>
+      </div>
+      <h2 id="heroTitle" class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-rayzaDark tracking-tight leading-tight">
+        Zero Agent Fees. Zero Middlemen.<br>
+        <span class="text-rayzaBlue">Direct Official Government Steps.</span>
+      </h2>
+      <p id="heroSubtitle" class="text-gray-600 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
+        Stop paying ₹300 - ₹1,500 to agents for minor spelling mistakes, address fixes, or new cards. Follow simple, numbered point-by-point instructions verified with official government rules.
+      </p>
+
+      <!-- Instant Global Search -->
+      <div class="mt-8 relative max-w-2xl mx-auto">
+        <div class="relative flex items-center">
+          <input 
+            type="text" 
+            id="searchInput" 
+            oninput="handleSearch(this.value)"
+            placeholder="Type any issue (e.g. Aadhaar spelling, PAN address, Tatkaal Passport, DL renewal, UAN, RC transfer)..." 
+            class="w-full bg-white border-2 border-gray-300 focus:border-rayzaBlue focus:ring-4 focus:ring-blue-100 rounded-2xl py-4 pl-12 pr-10 text-gray-800 text-sm sm:text-base shadow-sm transition placeholder:text-gray-400 focus:outline-none"
+          >
+          <div class="absolute left-4 text-gray-400">
+            <svg class="w-5 h-5 text-rayzaBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-4 text-gray-400 hover:text-gray-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <p class="text-[11px] text-gray-400 mt-2 text-left sm:text-center">
+          ⚡ Quick Searches: 
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('Aadhaar Name')">Aadhaar Name</span>, 
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('Instant e-PAN')">Instant e-PAN</span>, 
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('Voter Form 8')">Voter Correction</span>, 
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('Tatkaal Passport')">Tatkaal Passport</span>,
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('Learner License')">Learner License</span>,
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('Activate UAN')">PF / UAN</span>,
+          <span class="text-rayzaBlue cursor-pointer hover:underline" onclick="quickFill('RC Transfer')">RC Transfer</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 scrollbar-none text-xs font-semibold" id="categoryPillContainer"></div>
+
+    <!-- Search Status Bar -->
+    <div id="searchResultsMeta" class="hidden mb-6 flex justify-between items-center bg-blue-50/60 border border-blue-200 rounded-xl px-4 py-2 text-xs font-medium text-rayzaBlue">
+      <span id="searchResultCount">Found 0 guides</span>
+      <button onclick="clearSearch()" class="text-rose-600 hover:underline font-bold">Reset Filters</button>
+    </div>
+
+    <!-- Main Documents Container -->
+    <div id="documentsContainer" class="space-y-12"></div>
+
+    <!-- No Results Placeholder -->
+    <div id="noResults" class="hidden text-center py-16 bg-white rounded-2xl border border-gray-200 shadow-sm mt-6">
+      <div class="text-4xl mb-3">🔍</div>
+      <h3 class="text-lg font-bold text-gray-800">No exact civic issue found</h3>
+      <p class="text-sm text-gray-500 max-w-md mx-auto mt-1 mb-4">Try searching general terms like "Address", "Name", "Lost", or select an ID category above.</p>
+      <button onclick="clearSearch()" class="bg-rayzaBlue text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-blue-700">Clear Search Query</button>
+    </div>
+
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- 4. STEP-BY-STEP VERIFIED GUIDE MODAL (NO EXTERNAL LINKS)      -->
+  <!-- ============================================================== -->
+  <div id="guideModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div id="modal-content" class="bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-gray-200 overflow-hidden my-auto max-h-[92vh] flex flex-col transform transition-all">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-gray-900 to-rayzaDark text-white p-6 relative border-b border-amber-400/40">
+        <button onclick="closeModal()" class="no-print absolute top-5 right-5 text-gray-300 hover:text-white bg-white/10 rounded-full p-2 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        
+        <div class="flex items-center gap-2 mb-2">
+          <span id="modalDocBadge" class="bg-blue-600/40 text-blue-200 text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-blue-400/40">Aadhaar Card</span>
+          <span class="bg-emerald-500/20 text-emerald-300 text-[11px] font-bold px-2 py-0.5 rounded-full border border-emerald-400/30">Verified Civic Workflow</span>
+        </div>
+        
+        <h3 id="modalTitle" class="text-xl sm:text-2xl font-extrabold tracking-tight text-white pr-8">
+          Name &amp; Spelling Correction Guide
+        </h3>
+        <p id="modalCategorySub" class="text-xs text-gray-300 mt-1 font-medium">Standard Government Procedure under official UIDAI regulatory directives.</p>
+      </div>
+
+      <!-- Quick Badges -->
+      <div class="bg-[#F8FAFC] border-b border-gray-200 p-4 grid grid-cols-3 gap-2 text-center text-xs">
+        <div class="bg-white p-2.5 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-gray-400 block text-[10px] uppercase font-bold tracking-wider">Official Fee</span>
+          <span id="modalFee" class="text-base font-extrabold text-emerald-700">₹50 Only</span>
+          <span class="block text-[9px] text-gray-400">(Zero Agent Charge)</span>
+        </div>
+        <div class="bg-white p-2.5 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-gray-400 block text-[10px] uppercase font-bold tracking-wider">Estimated Time</span>
+          <span id="modalTime" class="text-base font-extrabold text-rayzaBlue">5 - 15 Days</span>
+          <span class="block text-[9px] text-gray-400">(Government Verification)</span>
+        </div>
+        <div class="bg-white p-2.5 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-gray-400 block text-[10px] uppercase font-bold tracking-wider">Method Mode</span>
+          <span id="modalMode" class="text-base font-extrabold text-rayzaDark">100% Online</span>
+          <span class="block text-[9px] text-gray-400">(Mobile OTP Required)</span>
+        </div>
+      </div>
+
+      <!-- Scrollable Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6 text-sm text-gray-700">
+        
+        <!-- Direct URL Warning Box -->
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
+          <div class="flex items-start gap-3">
+            <span class="text-lg">🛡️</span>
+            <div>
+              <h4 class="font-bold text-amber-900 text-xs sm:text-sm">Official Website Address (Safe Browsing Rule)</h4>
+              <p class="text-xs text-amber-800 mt-0.5 leading-relaxed">
+                To prevent middleman phishing and fake payment fraud, <strong>we do not provide clickable redirect links</strong>. Open your browser and manually type this exact government URL:
+              </p>
+              <div class="mt-2 inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-amber-300 font-mono text-xs font-bold text-gray-900 shadow-sm select-all">
+                <span id="modalOfficialUrl">myaadhaar.uidai.gov.in</span>
+                <span class="text-[10px] font-sans font-normal text-gray-400">(Verify .gov.in or .nic.in)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Required Documents Checklist -->
+        <div>
+          <h4 class="font-extrabold text-rayzaDark text-sm sm:text-base flex items-center justify-between mb-3">
+            <span class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-rayzaBlue"></span>
+              Keep These Required Documents Ready (Select Valid Proof):
+            </span>
+            <span class="text-[11px] font-normal text-gray-500">Tap to check off</span>
+          </h4>
+          <div id="modalDocChecklist" class="space-y-2 bg-gray-50 p-4 rounded-2xl border border-gray-200"></div>
+        </div>
+
+        <!-- Numbered Step-by-Step Points -->
+        <div>
+          <h4 class="font-extrabold text-rayzaDark text-sm sm:text-base flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 rounded-full bg-rayzaBlue"></span>
+            Exact Numbered Point-by-Point Procedure:
+          </h4>
+          <div id="modalStepList" class="space-y-3"></div>
+        </div>
+
+        <!-- Offline Instructions -->
+        <div class="bg-gray-100/70 p-4 rounded-2xl border border-gray-200 text-xs">
+          <h5 class="font-bold text-gray-800 flex items-center gap-1.5 mb-1.5">
+            <span>🏢</span> What if you cannot do this online? (Physical Counter Steps):
+          </h5>
+          <p id="modalOfflineSteps" class="text-gray-600 leading-relaxed"></p>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-gray-50 border-t border-gray-200 p-4 px-6 flex flex-wrap items-center justify-between gap-3 no-print">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-xl text-xs font-bold hover:bg-gray-100 transition shadow-sm">
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          Print / Save Step Checklist
+        </button>
+
+        <button onclick="closeModal()" class="bg-rayzaBlue hover:bg-rayzaBlueDark text-white px-6 py-2 rounded-xl text-xs font-bold transition shadow-md">
+          I Understand the Process
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 5. ANTI-FRAUD ADVISORY MODAL                                   -->
+  <!-- ============================================================== -->
+  <div id="fraudModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border border-red-200 overflow-hidden">
+      <div class="bg-rose-700 text-white p-5 flex justify-between items-center">
+        <div class="flex items-center gap-2 font-bold text-base">
+          <span>⚠️</span> Anti-Scam Public Advisory
+        </div>
+        <button onclick="closeFraudModal()" class="text-white/80 hover:text-white">✕</button>
+      </div>
+      <div class="p-6 space-y-4 text-xs sm:text-sm text-gray-700">
+        <p class="font-semibold text-gray-900">
+          How citizens get scammed every day across India:
+        </p>
+        <ul class="space-y-2 list-disc pl-5 text-gray-600">
+          <li><strong>Fake Portals:</strong> Scam sites charging ₹500 for Aadhaar PVC or PAN cards. Official PVC card fee is only ₹50.</li>
+          <li><strong>Cyber-Café Overcharging:</strong> Agents charging ₹200 for basic e-Aadhaar or Voter ID downloads which are 100% free on government portals.</li>
+          <li><strong>OTP Theft:</strong> Middlemen asking for your Aadhaar OTP. Never share your Aadhaar OTP with any agent or over the phone.</li>
+          <li><strong>Tatkaal Passport Scams:</strong> Agents claiming guaranteed appointment booking for ₹3,000 extra. All appointments open daily on official Passport Seva portal at designated times.</li>
+        </ul>
+        <div class="bg-gray-50 p-3 rounded-xl border border-gray-200 text-xs text-gray-500 font-medium">
+          💡 RAYZA PRO ID Sewa is built to keep Indian citizens completely self-reliant and financially protected.
+        </div>
+      </div>
+      <div class="bg-gray-100 p-4 text-right">
+        <button onclick="closeFraudModal()" class="bg-gray-900 text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-black">
+          Close Advisory
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 6. FOOTER WITH TRANSPARENCY & DISCLAIMERS                      -->
+  <!-- ============================================================== -->
+  <footer class="bg-white border-t border-gray-200 mt-16 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" alt="RAYZA PRO" class="h-8 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/32x32/111827/D4AF37?text=RP';">
+            <span class="font-serif font-black tracking-wider text-lg text-rayzaDark">RAYZA PRO</span>
+            <span class="text-rayzaBlue font-bold text-xs">| ID SEWA INITIATIVE</span>
+          </div>
+          <p class="text-gray-600 leading-relaxed text-xs max-w-md">
+            Empowering Indian citizens with zero-cost, truthful step-by-step navigation guides for all national and state identity documents. Stripping away middleman extortion through direct procedural transparency.
+          </p>
+          <p class="text-[11px] text-gray-400">
+            Powered by RAYZA PRO Ecosystem • Designed for all 28 States &amp; 8 Union Territories.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-gray-900 uppercase tracking-wider text-[11px] mb-3">Official Central Portals</h4>
+          <ul class="space-y-1.5 text-xs text-gray-600 font-mono">
+            <li>• myaadhaar.uidai.gov.in</li>
+            <li>• onlineservices.nsdl.com</li>
+            <li>• voters.eci.gov.in</li>
+            <li>• passportindia.gov.in</li>
+            <li>• parivahan.gov.in</li>
+            <li>• beneficiary.nha.gov.in</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-gray-900 uppercase tracking-wider text-[11px] mb-3">Civic Ethics &amp; Disclaimer</h4>
+          <p class="text-[11px] text-gray-500 leading-relaxed">
+            RAYZA PRO ID SEWA is an independent civic knowledge initiative. We do not store personal ID numbers, collect OTPs, or process applications on our servers. All steps guide citizens directly to official sovereign portals of the Republic of India.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-100 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-400 gap-3">
+        <span>© 2026 RAYZA PRO Ecosystem. All rights reserved. Non-government public utility guide.</span>
+        <div class="flex gap-4">
+          <button onclick="openAntiFraudModal()" class="hover:text-rose-600 font-semibold">Report Agent Fraud</button>
+          <span>•</span>
+          <span class="text-emerald-600 font-semibold">100% Free Public Guide</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================== -->
+  <!-- 7. APPLICATION LOGIC & COMPLETE EXHAUSTIVE DATABASE             -->
+  <!-- ============================================================== -->
+  <script>
+    // 12 Languages Translation Dictionary
+    const translations = {
+      en: {
+        headerNotice: "🛡️ 100% Truth-Guided Official Portals: Stop paying unauthorized cyber-café & middleman scams.",
+        scamAlertBtnText: "Agent Scam Alert",
+        heroTitle: "Zero Agent Fees. Zero Middlemen.<br><span class='text-rayzaBlue'>Direct Official Government Steps.</span>",
+        heroSubtitle: "Stop paying ₹300 - ₹1,500 to agents for minor spelling mistakes, address fixes, or new cards. Follow simple, numbered point-by-point instructions verified with official government rules.",
+        searchPlaceholder: "Type any issue (e.g. Aadhaar spelling, PAN address, Tatkaal Passport, DL renewal, UAN, RC transfer)...",
+        viewGuide: "View Step-by-Step Guide →",
+        allDocs: "All Government IDs",
+        selectIssue: "Choose Specific Service / Issue:",
+        brandSubTag: "ID SEWA (नागरिक सेवा पोर्टल)"
+      },
+      hi: {
+        headerNotice: "🛡️ 100% सटीक सरकारी प्रक्रिया: साइबर कैफे और बिचौलियों को फालतू पैसे देना बंद करें।",
+        scamAlertBtnText: "एजेंट फ्रॉड अलर्ट",
+        heroTitle: "कोई एजेंट नहीं। कोई दलाली नहीं।<br><span class='text-rayzaBlue'>सीधे असली सरकारी तरीके।</span>",
+        heroSubtitle: "नाम में सिर्फ एक अक्षर की गलती या पता बदलने के लिए ₹500 खर्च न करें। जानिए 100% सही और आधिकारिक सरकारी नियम बिना किसी लंबे पैराग्राफ के।",
+        searchPlaceholder: "अपनी समस्या खोजें (जैसे आधार नाम, पैन कार्ड सुधार, तत्काल पासपोर्ट, डीएल, पीएफ)...",
+        viewGuide: "गाइड देखें →",
+        allDocs: "सभी सरकारी दस्तावेज",
+        selectIssue: "अपनी समस्या / सेवा चुनें:",
+        brandSubTag: "नागरिक सेवा पोर्टल (RAYZA PRO)"
+      },
+      mr: {
+        headerNotice: "🛡️ 100% खरी सरकारी माहिती: एजंट किंवा सायबर कॅफेला जादा पैसे देणे पूर्णपणे थांबवा.",
+        scamAlertBtnText: "एजंट फसवणूक इशारा",
+        heroTitle: "कोणताही एजंट नको, दलाली नको.<br><span class='text-rayzaBlue'>थेट अधिकृत शासकीय पायऱ्या.</span>",
+        heroSubtitle: "आधार कार्डातील नावातील चूक दुरुस्त करणे असो वा नवीन पॅन कार्ड, फसवणूक टाळा आणि अचूक नियमावली जाणून घ्या.",
+        searchPlaceholder: "समस्या शोधा (उदा. आधार नाव दुरुस्ती, मतदान ओळखपत्र, ड्रायव्हिंग लायसन्स, रेशन कार्ड)...",
+        viewGuide: "मार्गदर्शन पहा →",
+        allDocs: "सर्व शासकीय कागदपत्रे",
+        selectIssue: "सेवा / समस्या निवडा:",
+        brandSubTag: "नागरिक सेवा पोर्टल (महाराष्ट्र)"
+      },
+      ur: {
+        headerNotice: "🛡️ 100% مستند سرکاری گائیڈ: سائبر کیفے اور ایجنٹوں کو بلاوجہ پیسے دینا بند کریں۔",
+        scamAlertBtnText: "دھوکہ دہی سے ہوشیار",
+        heroTitle: "نہ کوئی ایجنٹ، نہ کوئی کمیشن۔<br><span class='text-rayzaBlue'>براہِ راست سرکاری و جائز طریقے</span>",
+        heroSubtitle: "آدھار میں نام کی درستگی، نیا پین کارڈ یا پاسپورٹ بنوانے کے لیے آسان اور محفوظ رہنمائی۔ بغیر لمبے مضامین کے۔",
+        searchPlaceholder: "مسئلہ تلاش کریں (مثلاً آدھار نام درستگی، نیا پین کارڈ، ووٹر شناختی کارڈ)...",
+        viewGuide: "مکمل رہنمائی دیکھیں ←",
+        allDocs: "تمام شناختی دستاویزات",
+        selectIssue: "خدمت یا مسئلہ منتخب کریں:",
+        brandSubTag: "شہری خدمت پورٹل"
+      },
+      bn: {
+        headerNotice: "🛡️ ১০০% নির্ভুল সরকারি নির্দেশিকা: সাইবার ক্যাফে বা দালালদের অতিরিক্ত টাকা দেওয়া বন্ধ করুন।",
+        scamAlertBtnText: "দালাল প্রতারণা সতর্কতা",
+        heroTitle: "কোনো দালাল নেই, কোনো বাড়তি ফি নেই।<br><span class='text-rayzaBlue'>সরাসরি অফিসিয়াল সরকারি পদ্ধতি।</span>",
+        heroSubtitle: "আধার কার্ডের নাম সংশোধন বা ভোটার আইডির জন্য সঠিক ও সহজ নিয়মাবলী জানুন পয়েন্ট আকারে।",
+        searchPlaceholder: "আপনার সমস্যা লিখুন (যেমন আধার নাম সংশোধন, প্যান কার্ড, পাসপোর্ট)...",
+        viewGuide: "ধাপগুলি দেখুন →",
+        allDocs: "সকল সরকারি কার্ড",
+        selectIssue: "নির্দিষ্ট সেবা বা সমস্যা নির্বাচন করুন:",
+        brandSubTag: "নাগরিক সেবা পোর্টাল"
+      },
+      ta: {
+        headerNotice: "🛡️ 100% உண்மையான அரசு வழிகாட்டுதல்: புரோக்கர்களுக்கு கூடுதல் பணம் கொடுப்பதை நிறுத்துங்கள்.",
+        scamAlertBtnText: "மோசடி எச்சரிக்கை",
+        heroTitle: "இடைத்தரகர்கள் இல்லை. கூடுதல் கட்டணம் இல்லை.<br><span class='text-rayzaBlue'>நேரடி அதிகாரப்பூர்வ அரசு படிகள்.</span>",
+        heroSubtitle: "ஆதார், பான், வாக்காளர் அட்டை அல்லது பாஸ்போர்ட் பிரச்சனைகளுக்கான துல்லியமான அரசு வழிகாட்டி.",
+        searchPlaceholder: "சேவையைத் தேடுங்கள் (ஆதார் முகவரி, பான் அட்டை, பாஸ்போர்ட், ஓட்டுநர் உரிமம்)...",
+        viewGuide: "வழிகாட்டியைப் பார்க்கவும் →",
+        allDocs: "அனைத்து ஆவணங்கள்",
+        selectIssue: "சேவை / சிக்கலைத் தேர்ந்தெடுக்கவும்:",
+        brandSubTag: "குடிமக்கள் சேவை மையம்"
+      },
+      te: {
+        headerNotice: "🛡️ 100% అధికారిక ప్రభుత్వ విధానం: సైబర్ కేఫ్‌లకు అనవసరమైన డబ్బులు చెల్లించడం ఆపండి.",
+        scamAlertBtnText: "మోసాల హెచ్చరిక",
+        heroTitle: "దళారులు లేరు. కమిషన్ లేదు.<br><span class='text-rayzaBlue'>నేరుగా అధికారిక ప్రభుత్వ మార్గాలు.</span>",
+        heroSubtitle: "ఆధార్, పాన్ కార్డు, ఓటర్ ఐడి లేదా పాస్‌పోర్ట్ సమస్యలకు సరళమైన సూచనలు.",
+        searchPlaceholder: "సమస్యను వెతకండి (ఆధార్ పేరు మార్పు, పాన్ లింక్, డ్రైవింగ్ లైసెన్స్)...",
+        viewGuide: "మార్గదర్శిని చూడండి →",
+        allDocs: "అన్ని ప్రభుత్వ గుర్తింపులు",
+        selectIssue: "సేవ లేదా సమస్యను ఎంచుకోండి:",
+        brandSubTag: "పౌర సేవా పోర్టల్"
+      },
+      kn: {
+        headerNotice: "🛡️ 100% ಅಧಿಕೃತ ಸರ್ಕಾರಿ ಮಾರ್ಗದರ್ಶಿ: ಏಜೆಂಟರಿಗೆ ಅನಗತ್ಯ ಹಣ ನೀಡುವುದನ್ನು ನಿಲ್ಲಿಸಿ.",
+        scamAlertBtnText: "ವಂಚನೆ ಎಚ್ಚರಿಕೆ",
+        heroTitle: "ಯಾವುದೇ ಏಜೆಂಟರಿಲ್ಲ, ಕಮಿಷನ್ ಇಲ್ಲ.<br><span class='text-rayzaBlue'>ನೇರ ಅಧಿಕೃತ ಸರ್ಕಾರಿ ಹಂತಗಳು.</span>",
+        heroSubtitle: "ಆಧಾರ್ ಹೆಸರು ತಿದ್ದುಪಡಿ, ಹೊಸ ಪಾನ್ ಕಾರ್ಡ್, ವೋಟರ್ ಐಡಿ ಅಥವಾ ಪಾಸ್‌ಪೋರ್ಟ್‌ಗಾಗಿ ನಿಖರ ಮಾರ್ಗದರ್ಶನ.",
+        searchPlaceholder: "ಹುಡುಕಿ (ಆಧಾರ್ ತಿದ್ದುಪಡಿ, ಹೊಸ ಪಾನ್, ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್)...",
+        viewGuide: "ಮಾರ್ಗದರ್ಶಿ ವೀಕ್ಷಿಸಿ →",
+        allDocs: "ಎಲ್ಲಾ ಸರ್ಕಾರಿ ದಾಖಲೆಗಳು",
+        selectIssue: "ಸೇವೆ / ಸಮಸ್ಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ:",
+        brandSubTag: "ನಾಗರಿಕ ಸೇವಾ ಪೋರ್ಟಲ್"
+      },
+      gu: {
+        headerNotice: "🛡️ 100% સત્તાવાર સરકારી માર્ગદર્શિકા: એજન્ટોને વધારાના પૈસા આપવાનું બંધ કરો.",
+        scamAlertBtnText: "એજન્ટ ફ્રોડ ચેતવણી",
+        heroTitle: "કોઈ એજન્ટ નહીં, કોઈ દલાલી નહીં.<br><span class='text-rayzaBlue'>સીધા સત્તાવાર સરકારી પગલાં.</span>",
+        heroSubtitle: "આધાર કાર્ડ નામ સુધારો, પાન કાર્ડ અથવા પાસપોર્ટ માટે સરળ અને સચોટ માહિતી.",
+        searchPlaceholder: "શોધો (આધાર સરનામું, પાન કાર્ડ સુધારો, ડ્રાઇવિંગ લાયસન્સ)...",
+        viewGuide: "માર્ગદર્શિકા જુઓ →",
+        allDocs: "બધા સરકારી દસ્તાવેજો",
+        selectIssue: "સેવા / સમસ્યા પસંદ કરો:",
+        brandSubTag: "નાગરિક સેવા પોર્ટલ"
+      },
+      ml: {
+        headerNotice: "🛡️ 100% ഔദ്യോഗിക സർക്കാർ ഗൈഡ്: ഏജന്റുമാർക്ക് അനാവശ്യമായി പണം നൽകുന്നത് ഒഴിവാക്കൂ.",
+        scamAlertBtnText: "തട്ടിപ്പ് മുന്നറിയിപ്പ്",
+        heroTitle: "ഇടനിലക്കാരില്ല, കമ്മീഷനില്ല.<br><span class='text-rayzaBlue'>നേരിട്ടുള്ള ഔദ്യോഗിക സർക്കാർ വഴികൾ.</span>",
+        heroSubtitle: "ആധാർ തിരുത്തലുകൾ, പാൻ കാർഡ്, വോട്ടർ ഐഡി, പാസ്‌പോർട്ട് എന്നിവയ്ക്കുള്ള കൃത്യമായ വിവരങ്ങൾ.",
+        searchPlaceholder: "തിരയുക (ആധാർ പേര് മാറ്റം, പുതിയ പാൻ, ഡ്രൈവിംഗ് ലൈസൻസ്)...",
+        viewGuide: "മാർഗ്ഗനിർദ്ദേശം കാണുക →",
+        allDocs: "എല്ലാ രേഖകളും",
+        selectIssue: "സേവനം അല്ലെങ്കിൽ പ്രശ്നം തിരഞ്ഞെടുക്കുക:",
+        brandSubTag: "പൗര സേവന പോർട്ടൽ"
+      },
+      pa: {
+        headerNotice: "🛡️ 100% ਸਹੀ ਸਰਕਾਰੀ ਪ੍ਰਕਿਰਿਆ: ਏਜੰਟਾਂ ਨੂੰ ਵਾਧੂ ਪੈਸੇ ਦੇਣੇ ਬੰਦ ਕਰੋ।",
+        scamAlertBtnText: "ਏਜੰਟ ਧੋਖਾਧੜੀ ਅਲਰਟ",
+        heroTitle: "ਕੋਈ ਏਜੰਟ ਨਹੀਂ, ਕੋਈ ਦਲਾਲੀ ਨਹੀਂ।<br><span class='text-rayzaBlue'>ਸਿੱਧੇ ਸਰਕਾਰੀ ਤਰੀਕੇ।</span>",
+        heroSubtitle: "ਆਧਾਰ ਕਾਰਡ, ਪੈਨ ਕਾਰਡ ਜਾਂ ਵੋਟਰ ਆਈਡੀ ਦੀਆਂ ਗਲਤੀਆਂ ਨੂੰ ਘਰ ਬੈਠੇ ਠੀਕ ਕਰਨ ਦਾ ਤਰੀਕਾ।",
+        searchPlaceholder: "ਸਮੱਸਿਆ ਖੋਜੋ (ਜਿਵੇਂ ਆਧਾਰ ਨਾਮ, ਨਵਾਂ ਪੈਨ, ਪਾਸਪੋਰਟ, ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ)...",
+        viewGuide: "ਗਾਈਡ ਵੇਖੋ →",
+        allDocs: "ਸਾਰੇ ਸਰਕਾਰੀ ਦਸਤਾਵੇਜ਼",
+        selectIssue: "ਸੇਵਾ ਜਾਂ ਸਮੱਸਿਆ ਚੁਣੋ:",
+        brandSubTag: "ਨਾਗਰਿਕ ਸੇਵਾ ਪੋਰਟਲ"
+      },
+      or: {
+        headerNotice: "🛡️ 100% ପ୍ରାମାଣିକ ସରକାରୀ ନିର୍ଦ୍ଦେଶାବଳୀ: ଦଲାଲମାନଙ୍କୁ ଅତିରିକ୍ତ ଟଙ୍କା ଦେବା ବନ୍ଦ କରନ୍ତୁ।",
+        scamAlertBtnText: "ଦଲାଲ ଠକେଇ ସତର୍କତା",
+        heroTitle: "କୌଣସି ଦଲାଲ ନାହିଁ, କମିଶନ ନାହିଁ।<br><span class='text-rayzaBlue'>ସିଧାସଳଖ ସରକାରୀ ପଦ୍ଧତି।</span>",
+        heroSubtitle: "ଆଧାର ନାମ ସଂଶୋଧନ, ପାନ କାର୍ଡ କିମ୍ବା ପାସପୋର୍ଟ ପାଇଁ ସହଜ ପଏଣ୍ଟ-ୱାଇଜ୍ ଗାଇଡ୍।",
+        searchPlaceholder: "ସମସ୍ୟା ଖୋଜନ୍ତୁ (ଆଧାର ଠିକଣା, ପାନ କାର୍ଡ, ଡ୍ରାଇଭିଂ ଲାଇସେନ୍ସ)...",
+        viewGuide: "ଗାଇଡ୍ ଦେଖନ୍ତୁ →",
+        allDocs: "ସମସ୍ତ ସରକାରୀ ପରିଚୟପତ୍ର",
+        selectIssue: "ସେବା ବା ସମସ୍ୟା ବାଛନ୍ତୁ:",
+        brandSubTag: "ନାଗରିକ ସେବା ପୋର୍ଟାଲ୍"
+      }
+    };
+
+    // Complete Exhaustive Two-Level Civic Database
+    const civicDatabase = [
+      {
+        id: "aadhaar",
+        title: "Aadhaar Card (UIDAI)",
+        icon: "🏛️",
+        officialUrl: "myaadhaar.uidai.gov.in",
+        department: "Unique Identification Authority of India",
+        issues: [
+          {
+            issueId: "aadhaar-name-change",
+            title: "Name & Spelling Mistake Correction",
+            fee: "₹50",
+            time: "5 - 15 Working Days",
+            mode: "Online (if mobile linked) / Seva Kendra",
+            summary: "Correct minor spelling errors or change name due to marriage or gazette notification.",
+            docs: [
+              "Passport OR PAN Card (Clear color scan)",
+              "Voter ID OR Driving License",
+              "10th/12th Board Marksheet with photograph",
+              "Marriage Certificate (for name change after marriage)",
+              "Gazette Notification (for complete legal name change)"
+            ],
+            steps: [
+              "Open your browser and type manually: myaadhaar.uidai.gov.in",
+              "Click the blue 'Login' button on the homepage.",
+              "Enter your 12-digit Aadhaar number, complete the Captcha, and click 'Send OTP'.",
+              "Enter the 6-digit OTP received on your linked mobile number to access your dashboard.",
+              "Click on 'Address / Document Update' or 'Update Demographics'.",
+              "Select 'Name Update' and carefully enter the corrected spelling in English and local script.",
+              "Upload a clear color scan of your valid Proof of Identity (under 2MB).",
+              "Pay exactly ₹50 using UPI, NetBanking, or Debit Card.",
+              "Download the acknowledgment slip and save the 14-digit URN (Update Request Number)."
+            ],
+            offlineSteps: "If your mobile number is NOT linked with Aadhaar, you cannot do this online. Visit your nearest official Aadhaar Seva Kendra or Post Office. Fill Form 1, pay ₹50 at the cash counter, and give your biometric fingerprint."
+          },
+          {
+            issueId: "aadhaar-address-update",
+            title: "Online Address Update (Self-Service)",
+            fee: "₹50 (Free during special UIDAI amnesty windows)",
+            time: "7 - 20 Days",
+            mode: "100% Online Self-Service",
+            summary: "Update permanent or current address using standard utility bills or government proofs.",
+            docs: [
+              "Electricity / Water / Piped Gas bill (issued within the last 3 months)",
+              "Bank Passbook with photo & bank stamp OR Bank Statement",
+              "Registered Rent Agreement (Registered under registration act, not plain notary)",
+              "Valid Passport OR Voter ID card",
+              "Head of Family (HoF) Consent Form (if you have no document in your own name)"
+            ],
+            steps: [
+              "Open browser and navigate to: myaadhaar.uidai.gov.in",
+              "Click 'Login' using your Aadhaar number and SMS OTP.",
+              "Select 'Address Update' > 'Update Address Online'.",
+              "Enter your new address details (Pincode, Street, House number, Landmark).",
+              "Select your document type from the approved dropdown list and upload the file.",
+              "Preview the details, accept declarations, and pay ₹50.",
+              "Save the acknowledgment receipt containing the URN code."
+            ],
+            offlineSteps: "If living with family without documents in your name, select 'Head of Family based Address Update' online and enter their Aadhaar for instant OTP authorization."
+          },
+          {
+            issueId: "aadhaar-mobile-biometric",
+            title: "Mobile Number Link & Biometric Update (Fingerprint/Iris/Photo)",
+            fee: "₹50 (Mobile update) / ₹100 (Biometric/Photo)",
+            time: "24 - 72 Hours",
+            mode: "Physical Visit Mandatory (Aadhaar Seva Kendra)",
+            summary: "Link or update your phone number and refresh biometric fingerprints and iris scans.",
+            docs: [
+              "Physical Aadhaar Card or Aadhaar number",
+              "Working mobile phone (to receive instant test verification OTP at counter)",
+              "No separate document is required for mobile number update"
+            ],
+            steps: [
+              "BEWARE OF SCAMS: No cyber-café can update your phone number without authorized UIDAI biometric hardware.",
+              "Book an appointment: Open browser and type: appointments.uidai.gov.in",
+              "Select your City / Location and click 'Proceed to Book Appointment'.",
+              "Select 'Aadhaar Update' and choose 'Mobile Number Update'.",
+              "Pick an available time slot at your nearest post office or ASK centre.",
+              "Visit the centre, present your Aadhaar number, place your thumb on the official scanner.",
+              "Pay ₹50 directly at the authorized counter and collect the printed receipt."
+            ],
+            offlineSteps: "Children turning 5 years and 15 years must undergo Mandatory Biometric Update (MBU). This is 100% FREE OF COST at all government centres."
+          },
+          {
+            issueId: "aadhaar-dob-fix",
+            title: "Date of Birth (DOB) Correction",
+            fee: "₹50",
+            time: "7 - 15 Working Days",
+            mode: "Aadhaar Seva Kendra / Online (if status is Declared)",
+            summary: "Update incorrect date of birth to match your official school marksheet or birth certificate.",
+            docs: [
+              "Birth Certificate issued by Registrar of Births / Municipal Corporation",
+              "Passport OR Pan Card",
+              "10th Standard School Leaving / Board Marksheet with clear DOB"
+            ],
+            steps: [
+              "UIDAI allows Date of Birth correction only ONCE in a lifetime.",
+              "If your DOB status is 'Declared', open browser and type: myaadhaar.uidai.gov.in",
+              "Login with OTP, select 'Update Demographics' > 'Date of Birth'.",
+              "Type the exact birth date as written on your official Birth Certificate / 10th marksheet.",
+              "Upload a clear scan of the document and pay the ₹50 fee.",
+              "If DOB is already 'Verified', you must visit an authorized Regional Aadhaar Seva Kendra with original Birth Certificate for exception handling."
+            ],
+            offlineSteps: "If online update is rejected, visit your nearest Aadhaar Seva Kendra with an original municipal Birth Certificate. Fill Form 1 and pay the official ₹50 fee."
+          },
+          {
+            issueId: "aadhaar-pvc-card",
+            title: "Order Original Waterproof PVC Aadhaar Card",
+            fee: "₹50 (Includes Speed Post Delivery)",
+            time: "7 - 12 Days by India Post",
+            mode: "100% Online",
+            summary: "Order an official bank-grade plastic PVC card with secure hologram and micro-text from UIDAI.",
+            docs: [
+              "Any active mobile phone (Does not need to be registered with Aadhaar)"
+            ],
+            steps: [
+              "Open browser and type: myaadhaar.uidai.gov.in",
+              "Scroll down and tap 'Order Aadhaar PVC Card'.",
+              "Enter your 12-digit Aadhaar number and Captcha.",
+              "If your mobile is NOT registered, tick 'My Mobile number is not registered' and type any phone you currently hold.",
+              "Submit the OTP received on that phone.",
+              "Preview your details (if logged in) and click 'Make Payment'.",
+              "Pay ₹50 via UPI or Card.",
+              "India Post Speed Post tracking number will be sent via SMS within 48 hours."
+            ],
+            offlineSteps: "Do not buy laminated paper cards from local shops. Unofficial plastic printouts lack secure QR codes and are rejected by airports and passport verification officers."
+          },
+          {
+            issueId: "aadhaar-lost-download",
+            title: "Download Lost e-Aadhaar / Retrieve Aadhaar Number",
+            fee: "FREE (₹0)",
+            time: "Instant (2 Minutes)",
+            mode: "100% Online",
+            summary: "Retrieve forgotten UID or download digitally signed, password-protected PDF copy.",
+            docs: [
+              "Registered Mobile Number (Must be active to receive OTP)",
+              "Full name and DOB matching records"
+            ],
+            steps: [
+              "To retrieve forgotten Aadhaar number: Type myaadhaar.uidai.gov.in into your browser.",
+              "Click 'Retrieve EID / Aadhaar Number'.",
+              "Enter your Full Name and Mobile Number, submit OTP, and your 12-digit number is sent via free SMS.",
+              "To download PDF: Click 'Download Aadhaar' on the portal.",
+              "Enter Aadhaar Number + Captcha + OTP and click 'Download'.",
+              "Password format: First 4 letters of your name in CAPITAL LETTERS followed by your 4-digit Birth Year (e.g. ANIS1995)."
+            ],
+            offlineSteps: "If your mobile is lost, visit any Aadhaar centre with your fingerprint. They will perform a biometric search and print your e-Aadhaar for ₹30."
+          }
+        ]
+      },
+      {
+        id: "pan",
+        title: "PAN Card (Income Tax / NSDL)",
+        icon: "💳",
+        officialUrl: "onlineservices.nsdl.com",
+        department: "Income Tax Department & Protean NSDL / UTIITSL",
+        issues: [
+          {
+            issueId: "pan-instant-epan",
+            title: "Instant Digital e-PAN (100% Free & Paperless)",
+            fee: "FREE (₹0)",
+            time: "Within 10 Minutes",
+            mode: "100% Online Paperless via Aadhaar e-KYC",
+            summary: "Instant legal PAN card issued in 10 minutes without uploading physical papers.",
+            docs: [
+              "Valid Aadhaar Card (Must have active linked mobile phone)",
+              "Applicant must be at least 18 years old and never assigned a PAN previously"
+            ],
+            steps: [
+              "Open browser and type: incometax.gov.in",
+              "Under 'Quick Links' on the left sidebar, click 'Instant e-PAN'.",
+              "Click 'Get New e-PAN'.",
+              "Enter your 12-digit Aadhaar number and check the consent box.",
+              "Enter the 6-digit OTP received from UIDAI on your phone.",
+              "Validate your Aadhaar details (Name, DOB, Gender, Photo).",
+              "Click 'Submit PAN Request'.",
+              "Wait 10 minutes, return to the page, click 'Check Status / Download e-PAN', and download your digitally signed PDF."
+            ],
+            offlineSteps: "If you need a physical plastic card delivered later, order a reprint on NSDL for ₹50 using your newly generated PAN number."
+          },
+          {
+            issueId: "pan-correction-reprint",
+            title: "Name, Father's Name, DOB Correction or Physical Reprint",
+            fee: "₹107 (Within India) / ₹1,017 (Abroad)",
+            time: "15 - 20 Working Days",
+            mode: "Online with Aadhaar e-Sign",
+            summary: "Fix spelling errors on existing PAN card and receive updated physical card.",
+            docs: [
+              "Existing PAN Card copy OR PAN allotment letter",
+              "Aadhaar Card (matching corrected name)",
+              "Matriculation 10th Certificate (for DOB or Father's Name correction)"
+            ],
+            steps: [
+              "Open browser and type: onlineservices.nsdl.com/paam/endUserRegisterContact.html",
+              "In 'Application Type' select: 'Changes or Correction in existing PAN Data / Reprint of PAN Card'.",
+              "Category: Select 'INDIVIDUAL'.",
+              "Fill Name, DOB, Email, Mobile and existing 10-character PAN number.",
+              "Save the temporary Token Number displayed.",
+              "Select 'Submit digitally through e-KYC & e-Sign (Paperless)'.",
+              "Check the specific box next to the field that needs correction (e.g. Name, Father's Name).",
+              "Authenticate via Aadhaar OTP and pay the ₹107 official fee.",
+              "Download the 15-digit acknowledgement slip to track delivery."
+            ],
+            offlineSteps: "If e-KYC fails, choose 'Forward application documents physically', print Form 49A, affix two passport photos, sign across photo and box, and courier it to the Protean NSDL Pune office."
+          },
+          {
+            issueId: "pan-aadhaar-link",
+            title: "Link PAN with Aadhaar & Clear Status",
+            fee: "₹1,000 (Government Late Penalty under Sec 234H)",
+            time: "48 - 72 Hours",
+            mode: "100% Online",
+            summary: "Mandatory legal linking to reactivate inoperative PAN cards.",
+            docs: [
+              "Aadhaar Card and PAN Card with matching Name and DOB"
+            ],
+            steps: [
+              "Open browser and type: incometax.gov.in",
+              "Under 'Quick Links', click 'Link Aadhaar Status' to verify existing status.",
+              "If not linked, click 'Link Aadhaar'.",
+              "Enter your PAN and Aadhaar number.",
+              "If penalty is pending, click 'Continue to Pay Through e-Pay Tax'.",
+              "Select Assessment Year (Current FY) and Type of Payment: 'Other Receipts (500)'.",
+              "Pay the ₹1,000 challan via UPI or Debit Card.",
+              "IMPORTANT: Wait 4 to 24 hours for payment authorization, then return to 'Link Aadhaar' page and submit the linking request."
+            ],
+            offlineSteps: "If demographic details do not match (e.g. name differs slightly), biometric linking can be completed at Protean/UTIITSL branches with biometric inspection for ₹50 extra."
+          }
+        ]
+      },
+      {
+        id: "voter",
+        title: "Voter ID Card (Election Commission of India)",
+        icon: "🗳️",
+        officialUrl: "voters.eci.gov.in",
+        department: "Election Commission of India (ECI)",
+        issues: [
+          {
+            issueId: "voter-new-form6",
+            title: "New Voter Registration (Age 18+ / Form 6)",
+            fee: "FREE (₹0 - 100% Govt Funded)",
+            time: "20 - 45 Days (Post BLO Verification)",
+            mode: "100% Online / Voter Helpline App",
+            summary: "Enroll as a first-time voter in electoral rolls and get free EPIC card.",
+            docs: [
+              "Recent passport-size colored photograph (Under 2MB)",
+              "Age Proof (Aadhaar / Birth Certificate / 10th marksheet)",
+              "Current Address Proof (Aadhaar / Electricity Bill / Bank Passbook)"
+            ],
+            steps: [
+              "Open browser and type: voters.eci.gov.in",
+              "Click 'Sign-Up' using your mobile number and create a password.",
+              "Log in and click 'New registration for general electors (Form 6)'.",
+              "Select your State, District, and Assembly Constituency.",
+              "Enter personal and family details (Father/Mother/Spouse name).",
+              "Upload photo, proof of age, and proof of address.",
+              "Review the form preview and click 'Submit'.",
+              "Save your Reference ID. A local BLO (Booth Level Officer) will visit for verification.",
+              "Upon approval, download your digital e-EPIC; plastic card is posted free."
+            ],
+            offlineSteps: "Collect physical Form 6 from your nearest Tehsil office or Local Booth Level Officer (BLO), attach photocopies of proofs, and hand it over directly to the BLO."
+          },
+          {
+            issueId: "voter-correction-form8",
+            title: "Correction of Entries & Address Shifting (Form 8)",
+            fee: "FREE (₹0)",
+            time: "15 - 30 Days",
+            mode: "100% Online",
+            summary: "Fix name, photo, date of birth, gender, or shift address to another constituency.",
+            docs: [
+              "EPIC Number (Voter Card Number)",
+              "Supporting document for correction (Aadhaar / Marksheet)"
+            ],
+            steps: [
+              "Open browser and type: voters.eci.gov.in",
+              "Log in and select 'Shifting of residence / correction of entries in existing electoral roll (Form 8)'.",
+              "Choose whether correction is for 'Self' or 'Other'.",
+              "Select 'Correction of Entries in Existing Electoral Roll'.",
+              "Check the boxes you want to update (Name, Gender, DOB, Relation, Photo, Mobile).",
+              "Enter correct details and upload matching proof document.",
+              "Submit declaration and note your Reference Number."
+            ],
+            offlineSteps: "Submit Form 8 physically during national Special Summary Revision camps held at your local polling station booth every year in October-December."
+          },
+          {
+            issueId: "voter-download-eepic",
+            title: "Download Digital e-EPIC Voter Card PDF",
+            fee: "FREE (₹0)",
+            time: "Instant Download",
+            mode: "100% Online",
+            summary: "Legally valid, digitally signed PDF voter card accepted at all polling stations.",
+            docs: [
+              "EPIC Number or Form Reference Number",
+              "Mobile number registered on Voter portal"
+            ],
+            steps: [
+              "Open browser and type: voters.eci.gov.in",
+              "Click on 'E-EPIC Download'.",
+              "Log in with your registered mobile number and OTP.",
+              "Enter your EPIC Number and select your State.",
+              "Click 'Send OTP' and enter the code received on your phone.",
+              "Click 'Download e-EPIC' to obtain the print-ready digital voter card."
+            ],
+            offlineSteps: "If your mobile is not linked to your EPIC, first submit Form 8 for 'Mobile Number Update'. It links within 7 days, after which download unlocks."
+          }
+        ]
+      },
+      {
+        id: "passport",
+        title: "Passport (Ministry of External Affairs)",
+        icon: "✈️",
+        officialUrl: "passportindia.gov.in",
+        department: "Consular, Passport & Visa Division, MEA",
+        issues: [
+          {
+            issueId: "passport-fresh-normal",
+            title: "Fresh Normal Passport (36 Pages / 10 Year Validity)",
+            fee: "₹1,500 (36 pages) / ₹2,000 (60 pages jumbo)",
+            time: "20 - 30 Working Days (including Police Verification)",
+            mode: "Online Application + Physical PSK Visit Mandatory",
+            summary: "Official Passport Seva Kendra (PSK) appointment booking without middleman fees.",
+            docs: [
+              "Aadhaar Card (Original + 2 self-attested copies)",
+              "10th Standard School Leaving / Board Certificate (Mandatory for Non-ECR status)",
+              "Bank Passbook (Active transactions with photo and stamp) OR Electricity Bill"
+            ],
+            steps: [
+              "Only use the official URL: passportindia.gov.in",
+              "Click 'New User Registration'. Select Passport Office nearest to you, enter details and email.",
+              "Log in, click 'Apply for Fresh Passport / Re-issue of Passport'.",
+              "Choose 'Fill Application Form Online' > 'Fresh Passport' > 'Normal' > '36 Pages'.",
+              "Ensure Name and Parents' Names match 10th marksheet exactly.",
+              "Under ECR category: If you passed 10th class, choose 'Non-ECR: YES'.",
+              "Pay the ₹1,500 fee online via SBI e-Pay (UPI/Debit Card) to book appointment slot at PSK / POPSK.",
+              "Download Appointment Confirmation receipt containing Batch and Sequence number."
+            ],
+            offlineSteps: "On appointment day: Reach PSK 15 minutes before time. Carry original Aadhaar, 10th certificate, address proof + 2 photocopies. Photographs are taken digitally inside Counter A."
+          },
+          {
+            issueId: "passport-tatkaal",
+            title: "Tatkaal Emergency Passport Scheme (Fast-Track)",
+            fee: "₹3,500 (₹1,500 paid online + ₹2,000 paid at PSK counter)",
+            time: "1 - 3 Working Days post PSK interview",
+            mode: "Online Tatkaal Slot Booking + PSK Visit",
+            summary: "Urgent passport dispatch without waiting for pre-police verification.",
+            docs: [
+              "Minimum THREE mandatory documents: Aadhaar, Voter ID or PAN, Bank Passbook or 10th Certificate",
+              "Annexure E (Self-declaration affidavit printed on plain paper)"
+            ],
+            steps: [
+              "Open browser and type: passportindia.gov.in",
+              "Under passport application, select scheme as 'TATKAAL'.",
+              "Tatkaal slots open daily at specific times (typically 11:00 AM / 11:30 AM).",
+              "Log in at designated opening time, select saved application, click 'Pay and Schedule Appointment'.",
+              "Pay ₹1,500 online and confirm the slot immediately.",
+              "At PSK counter: Granting Officer verifies documents; pay remaining ₹2,000 fee at Counter C in cash/card.",
+              "Passport is dispatched within 24-48 hours via Speed Post."
+            ],
+            offlineSteps: "For medical emergencies or bereavement when slots are full, approach the Regional Passport Officer (RPO) directly with hospital documents for emergency manual processing."
+          },
+          {
+            issueId: "passport-pcc",
+            title: "Police Clearance Certificate (PCC) for Work/Visa",
+            fee: "₹500 Only",
+            time: "7 - 14 Days",
+            mode: "Online Booking + PSK verification",
+            summary: "Official PCC issuance for employment visas, immigration, or foreign residency.",
+            docs: [
+              "Original Valid Passport with self-attested photocopies of first and last 2 pages",
+              "Current Address Proof (if different from passport address)",
+              "Employment contract letter / Visa application document"
+            ],
+            steps: [
+              "Open browser and type: passportindia.gov.in",
+              "Log in and select 'Apply for Police Clearance Certificate (PCC)'.",
+              "Enter current passport number, date of issue, and destination country.",
+              "Select purpose of PCC and pay ₹500 fee online to book appointment slot.",
+              "Visit PSK with original passport; file is forwarded to your local Police Station.",
+              "Complete police station verification and download issued PCC."
+            ],
+            offlineSteps: "Keep two colored passport photos and photocopies of rent agreement ready when visiting the local police station for physical verification."
+          }
+        ]
+      },
+      {
+        id: "driving",
+        title: "Driving License & RTO (Sarathi Parivahan)",
+        icon: "🚗",
+        officialUrl: "parivahan.gov.in",
+        department: "Ministry of Road Transport and Highways (MoRTH)",
+        issues: [
+          {
+            issueId: "dl-learner-license",
+            title: "Learner's License (LL) - Online Aadhaar Test from Home",
+            fee: "₹150 (Test fee) + ₹50 (Issue fee) = ₹200",
+            time: "Same Day (Instant PDF on passing test)",
+            mode: "100% Online Contactless (No RTO visit needed in most states)",
+            summary: "Give computer test from home and get legal 6-month valid learner license.",
+            docs: [
+              "Aadhaar Card (with camera-enabled phone/laptop for facial authentication)",
+              "Age Proof & Blood Group declaration",
+              "Medical Self-Declaration (Form 1 filled online)"
+            ],
+            steps: [
+              "Open browser and type: parivahan.gov.in",
+              "Click on 'Drivers / Learners License' under Online Services.",
+              "Select your State and click 'Apply for Learner License'.",
+              "Choose 'Applicant holds Aadhaar Card' for Contactless Paperless process.",
+              "Authenticate with Aadhaar OTP; photo and address auto-fill from UIDAI records.",
+              "Select Vehicle Class: MCWG (Bike) and/or LMV (Car).",
+              "Watch the mandatory Road Safety Tutorial video on screen.",
+              "Take the 15-question Online LL Test (Road signs, traffic rules; score min 9/15).",
+              "Download your official Learner License immediately upon passing."
+            ],
+            offlineSteps: "If your state does not support Aadhaar online test or face match fails 3 times, visit your regional RTO on appointment date to take test on touch-screen kiosks."
+          },
+          {
+            issueId: "dl-permanent-slot",
+            title: "Permanent Driving License (DL) & Track Test Booking",
+            fee: "₹200 (DL issue) + ₹300 (Driving test) = ₹500 - ₹700",
+            time: "Test on appointment day; Card delivered in 15 days",
+            mode: "Online Application + In-Person RTO Driving Track Test",
+            summary: "Convert your Learner License to permanent smart driving license.",
+            docs: [
+              "Valid Learner License number (Must be at least 30 days old and under 180 days old)",
+              "Vehicle of matching category with valid RC, Insurance, and PUC for test track"
+            ],
+            steps: [
+              "Open browser and type: parivahan.gov.in",
+              "Select State and click 'Apply for Driving License'.",
+              "Enter Learner License Number and Date of Birth.",
+              "Click 'Appointments' > 'Slot Booking DL Test'.",
+              "Pick date slot at your regional RTO track and pay fee online.",
+              "Reach RTO track 30 minutes before time with vehicle, original LL, and appointment slip.",
+              "Clear the physical driving test ('H' track, '8' track, parallel parking).",
+              "Inspector approves file; Smart card DL arrives by Speed Post."
+            ],
+            offlineSteps: "Ensure test vehicle has red 'L' sign board pasted front and back, and carry valid original Pollution Certificate (PUC)."
+          },
+          {
+            issueId: "dl-renewal-address",
+            title: "Renewal of Expired License / Change of Address",
+            fee: "₹200 (Renewal) + ₹200 (Smart card fee). (Late fee ₹1,000/yr if expired >1 year)",
+            time: "7 - 14 Days",
+            mode: "Online Application (Faceless in participating states)",
+            summary: "Renew license within 1 year before or after expiry without re-taking driving test.",
+            docs: [
+              "Original Expired Driving License",
+              "Medical Certificate Form 1-A (Mandatory if age over 40 years, signed by MBBS doctor)",
+              "New Address Proof (Aadhaar / Voter ID)"
+            ],
+            steps: [
+              "Open browser and type: parivahan.gov.in",
+              "Select State > 'Services on DL (Renewal/Duplicate/AEDL/Others)'.",
+              "Enter DL Number and Date of Birth.",
+              "Select 'Renewal of DL' and/or 'Change of Address in DL'.",
+              "If over 40, upload signed Form 1-A medical scan.",
+              "Pay renewal fee online; card is dispatched by Speed Post."
+            ],
+            offlineSteps: "If expired for more than 1 year, you must pay accumulated late fines and re-appear for the RTO track driving test."
+          }
+        ]
+      },
+      {
+        id: "ration",
+        title: "Ration Card (NFSA / State Food Dept)",
+        icon: "🌾",
+        officialUrl: "nfsa.gov.in",
+        department: "National Food Security Portal & State Food Civil Supplies",
+        issues: [
+          {
+            issueId: "ration-add-member",
+            title: "Add New Member (Newborn Baby or Newly Married Wife)",
+            fee: "FREE (₹0 - Max ₹20 nominal portal charges in some states)",
+            time: "15 - 30 Working Days",
+            mode: "Online via State Food Portal / Local Supply Office (FSO)",
+            summary: "Add family member to existing ration card to increase quota of subsidized grains.",
+            docs: [
+              "For Newborn: Birth Certificate + Child's Aadhaar + Parents' Ration Card",
+              "For Wife: Marriage Certificate + Aadhaar with updated husband's name + Deletion Certificate from father's card"
+            ],
+            steps: [
+              "Open browser and type: nfsa.gov.in (or state food portal like rcms.mahafood.gov.in / fcs.up.gov.in).",
+              "Log in using Ration Card Number and Head of Family Aadhaar OTP.",
+              "Click 'Ration Card Member Modification' > 'Add New Member'.",
+              "Enter member Name, Gender, DOB, Relation, and Aadhaar number.",
+              "Upload Birth Certificate or Deletion Certificate.",
+              "Submit form and save Application Number for tracking."
+            ],
+            offlineSteps: "Fill physical Member Addition Form at your local Tehsil Supply Office with photocopies of birth certificate and Aadhaar."
+          },
+          {
+            issueId: "ration-onorc-transfer",
+            title: "One Nation One Ration Card (ONORC) Portability",
+            fee: "FREE (₹0)",
+            time: "Instant at any Fair Price Shop (PDS)",
+            mode: "Biometric e-POS Machine at Ration Shop",
+            summary: "Migrant workers can collect ration anywhere in India without changing card.",
+            docs: [
+              "Existing Ration Card number from home state",
+              "Aadhaar Card of any family member listed on card"
+            ],
+            steps: [
+              "You DO NOT need to make a new card when moving to another state for work.",
+              "Ensure all family members have Aadhaar seeded to ration card.",
+              "Walk into any Fair Price Shop in your current residing city.",
+              "Inform dealer you want ration under 'ONORC Portability'.",
+              "Authenticate thumb on e-POS biometric scanner.",
+              "Collect entitled monthly subsidized grain quota."
+            ],
+            offlineSteps: "Download official 'Mera Ration' Android app from Google Play Store to locate nearby FPS shops and check monthly grain entitlements."
+          }
+        ]
+      },
+      {
+        id: "ayushman",
+        title: "Ayushman Bharat (PM-JAY Health Card)",
+        icon: "🏥",
+        officialUrl: "beneficiary.nha.gov.in",
+        department: "National Health Authority (NHA)",
+        issues: [
+          {
+            issueId: "ayushman-card-apply",
+            title: "Check Eligibility & Download ₹5 Lakh Free Health Card",
+            fee: "100% FREE (Never pay any agent!)",
+            time: "Instant Download upon e-KYC approval",
+            mode: "100% Online via Beneficiary Portal / App",
+            summary: "Get ₹5,00,000 yearly free hospitalization coverage per family across empaneled hospitals.",
+            docs: [
+              "Aadhaar Card (Mandatory for biometric/OTP e-KYC)",
+              "Ration Card (PHH / Antyodaya AAY) OR PM-JAY Family ID letter"
+            ],
+            steps: [
+              "Open browser and type: beneficiary.nha.gov.in",
+              "Select 'Beneficiary' option and log in with phone OTP.",
+              "Select State, Sub-Scheme (PMJAY), District, and Search by Aadhaar Number or Family ID.",
+              "If eligible, all family members' names appear on screen.",
+              "Click e-KYC icon, authenticate via Aadhaar OTP, capture live selfie.",
+              "Once match is confirmed, click 'Download Card' for PVC-ready PDF."
+            ],
+            offlineSteps: "Visit 'Ayushman Mitra' desk at any Government District Hospital or CSC center for free on-the-spot biometric card generation."
+          }
+        ]
+      },
+      {
+        id: "eshram",
+        title: "E-Shram & EPFO / UAN (Labor & Employment)",
+        icon: "💼",
+        officialUrl: "eshram.gov.in",
+        department: "Ministry of Labour & Employment / EPFO",
+        issues: [
+          {
+            issueId: "eshram-self-reg",
+            title: "E-Shram Card Registration for Unorganized Workers",
+            fee: "100% FREE",
+            time: "Instant UAN Card Generation",
+            mode: "100% Online Self-Enrollment",
+            summary: "Accidental insurance cover of ₹2 Lakh and direct DBT benefits for unorganized workers.",
+            docs: [
+              "Aadhaar Card with linked mobile number",
+              "Active Bank Account Number with IFSC Code",
+              "Age between 16 and 59 years (non-taxpayer, non-EPF/ESIC member)"
+            ],
+            steps: [
+              "Open browser and type: eshram.gov.in",
+              "Click 'Register on e-Shram'.",
+              "Enter Aadhaar-linked mobile number and Captcha.",
+              "Select 'NO' for EPFO/ESIC questions and verify with OTP.",
+              "Enter 12-digit Aadhaar number and complete OTP authentication.",
+              "Fill Education, Occupation Skill, and Bank Account details.",
+              "Submit form to generate 12-digit Universal Account Number (UAN) card instantly."
+            ],
+            offlineSteps: "If mobile number is not linked with Aadhaar, visit any Common Service Centre (CSC) or Post Office with biometric fingerprint for free registration."
+          },
+          {
+            issueId: "epfo-uan-activate",
+            title: "UAN Activation & Aadhaar Seeding for Online PF Withdrawal",
+            fee: "FREE (₹0)",
+            time: "Instant Activation (Portal unlocks in 6 hours)",
+            mode: "100% Online Member Portal",
+            summary: "Activate your Universal Account Number to withdraw PF, check passbook, and transfer accounts.",
+            docs: [
+              "12-digit UAN number provided by employer (or from salary slip)",
+              "Aadhaar Card with linked phone number",
+              "Bank Account details matching employee records"
+            ],
+            steps: [
+              "Open browser and type: unifiedportal-mem.epfindia.gov.in/memberinterface/",
+              "Scroll down and click 'Activate UAN'.",
+              "Enter UAN Number, Aadhaar Number, Name, DOB, and Mobile Number.",
+              "Click 'Get Authorization PIN' and enter the Aadhaar OTP.",
+              "Your login password is sent to your phone via SMS.",
+              "Log in, navigate to 'Manage' > 'KYC', and ensure Bank Account and PAN are approved.",
+              "Submit online PF withdrawal (Form 31/19/10C) directly without employer intervention."
+            ],
+            offlineSteps: "If your employer is unresponsive and KYC is rejected, file an official grievance on epfigms.gov.in for direct regional PF commissioner intervention."
+          }
+        ]
+      },
+      {
+        id: "vital-certificates",
+        title: "Birth, Domicile & Income Certificates",
+        icon: "📜",
+        officialUrl: "crsorgi.gov.in",
+        department: "Civil Registration System & State e-District Portals",
+        issues: [
+          {
+            issueId: "cert-birth-online",
+            title: "Birth Certificate Registration & Download",
+            fee: "FREE within 21 days; ₹2 - ₹10 late fee after 21 days",
+            time: "7 - 15 Days",
+            mode: "Civil Registration System (CRS) / Municipal Office",
+            summary: "Primary proof of citizenship and age for school admission, passport, and identity.",
+            docs: [
+              "Hospital Discharge Slip / Birth Report issued by hospital doctor",
+              "Parents' Aadhaar Cards and Marriage Certificate"
+            ],
+            steps: [
+              "Hospital births: Hospitals are legally mandated to report births on crsorgi.gov.in within 21 days.",
+              "To download certificate: Open browser and type state portal (e.g. edistrict.delhigovt.nic.in, aaplesarkar.mahaonline.gov.in, crsorgi.gov.in).",
+              "Search by Registration Number or Hospital Name + Date of Birth.",
+              "If name was not entered at birth, apply under 'Child Name Addition' online before 1 year without affidavit.",
+              "Download digitally signed certificate with QR code."
+            ],
+            offlineSteps: "For delayed registrations over 1 year: Requires an Order from Executive Magistrate (SDM/Tehsildar). Submit Form 1 with non-availability certificate from municipal corporation."
+          },
+          {
+            issueId: "cert-domicile-income",
+            title: "Domicile / Residence & Income Certificate (e-District)",
+            fee: "₹20 - ₹50 (Official state treasury fee)",
+            time: "15 - 21 Working Days",
+            mode: "State e-District Portal or Citizen Service Center",
+            summary: "Essential for government job reservations, welfare schemes, and college concessions.",
+            docs: [
+              "Proof of residence for last 10-15 years (School LC, Electricity Bills, Land Registry)",
+              "Salary slip / IT Return / Patwari report for Income certificate",
+              "Self-declaration affidavit"
+            ],
+            steps: [
+              "Open browser and type state e-District portal (e.g. edistrict.up.gov.in, aaplesarkar.mahaonline.gov.in).",
+              "Create Citizen Login with your mobile number.",
+              "Select 'Revenue Department' > 'Domicile / Residence Certificate' or 'Income Certificate'.",
+              "Fill family details, earnings, address history, and upload self-attested documents.",
+              "Pay ₹20-₹40 state fee online.",
+              "Application is verified by local Talathi / Lekhpal; download digitally signed certificate once approved."
+            ],
+            offlineSteps: "Rural residents can visit nearest Gram Panchayat or CSC center with originals; operator submits on your behalf for capped fee of ₹30."
+          }
+        ]
+      },
+      {
+        id: "vehicle-rc",
+        title: "Vehicle Registration (RC / Vahan)",
+        icon: "🚘",
+        officialUrl: "vahan.parivahan.gov.in",
+        department: "Ministry of Road Transport and Highways (Vahan)",
+        issues: [
+          {
+            issueId: "rc-transfer-ownership",
+            title: "Transfer of Ownership (Vehicle Sale / Purchase)",
+            fee: "₹300 - ₹500 (Varies by vehicle category)",
+            time: "15 - 30 Working Days",
+            mode: "Online Vahan Citizen Portal + Physical Inspection",
+            summary: "Transfer registration certificate from seller to buyer using Form 29 & Form 30.",
+            docs: [
+              "Original Registration Certificate (RC)",
+              "Form 29 (Notice of Transfer) & Form 30 (Application for Transfer)",
+              "Valid Insurance Certificate & Pollution Certificate (PUC)",
+              "Buyer's Aadhaar Card / Address Proof"
+            ],
+            steps: [
+              "Open browser and type: vahan.parivahan.gov.in/vahaneservice/",
+              "Enter Vehicle Registration Number and select State RTO.",
+              "Select 'Online Services' > 'Transfer of Ownership'.",
+              "Enter Chassis Number last 5 digits and verify via mobile OTP.",
+              "Enter Buyer's details, address, and upload signed Form 29 & 30 scans.",
+              "Pay transfer fee online and download payment receipt.",
+              "Submit physical file with original RC at buyer's local RTO counter."
+            ],
+            offlineSteps: "If transferring across different RTO zones in the same state, obtain an internal clearance; if transferring inter-state, apply for Form 28 (NOC) first."
+          },
+          {
+            issueId: "rc-hypothecation-termination",
+            title: "Hypothecation Removal (Bank Loan Closure / Form 35)",
+            fee: "₹100 - ₹200 (Official RTO charge)",
+            time: "7 - 14 Days",
+            mode: "Online Vahan Portal + Bank NOC",
+            summary: "Remove bank hypothecation from vehicle RC after paying off loan.",
+            docs: [
+              "Bank No Objection Certificate (NOC) in original",
+              "Form 35 signed and stamped by bank manager",
+              "Original Registration Certificate (RC) & Valid Insurance"
+            ],
+            steps: [
+              "Obtain original Bank NOC and Form 35 (valid for 90 days).",
+              "Open browser and type: vahan.parivahan.gov.in/vahaneservice/",
+              "Select 'Hypothecation Termination'.",
+              "Enter loan closure date and upload bank NOC scan.",
+              "Pay fee online and submit receipt with original RC at RTO counter."
+            ],
+            offlineSteps: "Ensure the bank has also marked loan closure on the central Vahan database online to prevent RTO rejection."
+          }
+        ]
+      }
+    ];
+
+    let currentLang = 'en';
+    let activeCategory = 'all';
+    let searchQuery = '';
+
+    window.onload = function() {
+      renderCategoryPills();
+      renderCatalog();
+
+      setTimeout(function() {
+        const splash = document.getElementById('splashScreen');
+        splash.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          splash.style.display = 'none';
+        }, 700);
+      }, 1800);
+    };
+
+    function renderCategoryPills() {
+      const container = document.getElementById('categoryPillContainer');
+      const t = translations[currentLang] || translations.en;
+      
+      let html = `
+        <button onclick="setCategoryFilter('all')" class="whitespace-nowrap px-4 py-2 rounded-xl transition ${activeCategory === 'all' ? 'bg-rayzaDark text-white shadow-sm' : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-100'}">
+          ${t.allDocs}
+        </button>
+      `;
+
+      civicDatabase.forEach(doc => {
+        const isSelected = activeCategory === doc.id;
+        html += `
+          <button onclick="setCategoryFilter('${doc.id}')" class="whitespace-nowrap px-4 py-2 rounded-xl flex items-center gap-1.5 transition ${isSelected ? 'bg-rayzaBlue text-white shadow-md' : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-100'}">
+            <span>${doc.icon}</span>
+            <span>${doc.title.split(' ')[0]}</span>
+          </button>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function setCategoryFilter(catId) {
+      activeCategory = catId;
+      renderCategoryPills();
+      renderCatalog();
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.trim().toLowerCase();
+      const clearBtn = document.getElementById('clearSearchBtn');
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      renderCatalog();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      input.value = '';
+      searchQuery = '';
+      document.getElementById('clearSearchBtn').classList.add('hidden');
+      renderCatalog();
+    }
+
+    function quickFill(term) {
+      const input = document.getElementById('searchInput');
+      input.value = term;
+      handleSearch(term);
+      input.focus();
+    }
+
+    function renderCatalog() {
+      const container = document.getElementById('documentsContainer');
+      const meta = document.getElementById('searchResultsMeta');
+      const countLabel = document.getElementById('searchResultCount');
+      const noResults = document.getElementById('noResults');
+      const t = translations[currentLang] || translations.en;
+
+      let totalMatchingIssues = 0;
+      let html = '';
+
+      civicDatabase.forEach(doc => {
+        if (activeCategory !== 'all' && doc.id !== activeCategory) {
+          return;
+        }
+
+        const filteredIssues = doc.issues.filter(issue => {
+          if (!searchQuery) return true;
+          const haystack = `${doc.title} ${issue.title} ${issue.summary} ${issue.fee} ${issue.docs.join(' ')} ${issue.steps.join(' ')}`.toLowerCase();
+          return haystack.includes(searchQuery);
+        });
+
+        if (filteredIssues.length > 0) {
+          totalMatchingIssues += filteredIssues.length;
+
+          html += `
+            <section class="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm transition hover:shadow-md">
+              
+              <!-- Category Header -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-gray-100">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-3xl shadow-inner">
+                    ${doc.icon}
+                  </div>
+                  <div>
+                    <h3 class="text-xl sm:text-2xl font-black text-gray-900 tracking-tight">${doc.title}</h3>
+                    <p class="text-xs text-gray-500 font-medium flex items-center gap-1.5 mt-0.5">
+                      <span>Authority: ${doc.department}</span>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Anti-Phishing Safe Domain Tag -->
+                <div class="bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2 flex items-center gap-2 self-start sm:self-auto">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <div class="text-[11px] font-mono text-gray-700">
+                    <span class="text-gray-400 block text-[9px] font-sans font-semibold uppercase">Official Address</span>
+                    <span class="font-bold text-gray-900 select-all">${doc.officialUrl}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Issue Selector Dropdown -->
+              <div class="mt-4 p-3 bg-blue-50/50 rounded-2xl border border-blue-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <span class="text-xs font-bold text-rayzaBlue flex items-center gap-1.5">
+                  <span>⚡</span> ${t.selectIssue}
+                </span>
+                <select onchange="if(this.value) openIssueModal('${doc.id}', this.value)" class="w-full sm:w-auto bg-white border border-gray-300 rounded-xl px-3 py-1.5 text-xs font-semibold text-gray-800 focus:outline-none focus:ring-2 focus:ring-rayzaBlue cursor-pointer">
+                  <option value="">-- Choose a specific problem --</option>
+                  ${doc.issues.map(iss => `<option value="${iss.issueId}">${iss.title}</option>`).join('')}
+                </select>
+              </div>
+
+              <!-- Issues Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+          `;
+
+          filteredIssues.forEach(issue => {
+            html += `
+              <div class="border border-gray-200/90 hover:border-rayzaBlue rounded-2xl p-5 flex flex-col justify-between transition-all hover:shadow-md bg-[#FAFBFD] group">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-2.5">
+                    <span class="text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 border border-emerald-300">
+                      Fee: ${issue.fee}
+                    </span>
+                    <span class="text-[10px] text-gray-400 font-medium">
+                      ⏱️ ${issue.time.split(' ')[0]} ${issue.time.split(' ')[1] || ''}
+                    </span>
+                  </div>
+
+                  <h4 class="font-bold text-base text-gray-900 group-hover:text-rayzaBlue transition-colors leading-snug">
+                    ${issue.title}
+                  </h4>
+                  
+                  <p class="text-xs text-gray-600 mt-2 line-clamp-2 leading-relaxed">
+                    ${issue.summary}
+                  </p>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-gray-200/70 flex items-center justify-between">
+                  <span class="text-[11px] text-gray-500 font-medium">
+                    ${issue.mode.includes('Online') ? '🌐 Online Method' : '🏢 Counter Method'}
+                  </span>
+
+                  <button 
+                    onclick="openIssueModal('${doc.id}', '${issue.issueId}')" 
+                    class="bg-rayzaBlue group-hover:bg-rayzaBlueDark text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition shadow-sm flex items-center gap-1"
+                  >
+                    <span>${t.viewGuide}</span>
+                  </button>
+                </div>
+              </div>
+            `;
+          });
+
+          html += `
+              </div>
+            </section>
+          `;
+        }
+      });
+
+      if (searchQuery) {
+        meta.classList.remove('hidden');
+        countLabel.textContent = `Found ${totalMatchingIssues} civic guides matching "${searchQuery}"`;
+      } else {
+        meta.classList.add('hidden');
+      }
+
+      if (totalMatchingIssues === 0) {
+        container.innerHTML = '';
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+        container.innerHTML = html;
+      }
+    }
+
+    function openIssueModal(docId, issueId) {
+      const doc = civicDatabase.find(d => d.id === docId);
+      if (!doc) return;
+      const issue = doc.issues.find(i => i.issueId === issueId);
+      if (!issue) return;
+
+      document.getElementById('modalDocBadge').textContent = doc.title;
+      document.getElementById('modalTitle').textContent = issue.title;
+      document.getElementById('modalCategorySub').textContent = `Official ${doc.department} procedural workflow`;
+      document.getElementById('modalFee').textContent = issue.fee;
+      document.getElementById('modalTime').textContent = issue.time;
+      document.getElementById('modalMode').textContent = issue.mode;
+      document.getElementById('modalOfficialUrl').textContent = doc.officialUrl;
+      document.getElementById('modalOfflineSteps').textContent = issue.offlineSteps;
+
+      const checklistContainer = document.getElementById('modalDocChecklist');
+      let checkHtml = '';
+      issue.docs.forEach((d) => {
+        checkHtml += `
+          <label class="flex items-start gap-2.5 cursor-pointer hover:bg-white p-2 rounded-xl transition border border-transparent hover:border-gray-200">
+            <input type="checkbox" class="w-4 h-4 mt-0.5 text-rayzaBlue rounded border-gray-300 focus:ring-rayzaBlue accent-blue-600">
+            <span class="text-xs text-gray-800 leading-snug font-medium">${d}</span>
+          </label>
+        `;
+      });
+      checklistContainer.innerHTML = checkHtml;
+
+      const stepContainer = document.getElementById('modalStepList');
+      let stepHtml = '';
+      issue.steps.forEach((s, idx) => {
+        stepHtml += `
+          <div class="flex items-start gap-3 bg-white p-3.5 rounded-2xl border border-gray-200/90 shadow-sm">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-rayzaBlue font-black text-xs flex items-center justify-center">
+              ${idx + 1}
+            </div>
+            <p class="text-xs sm:text-sm text-gray-800 leading-relaxed font-normal">${s}</p>
+          </div>
+        `;
+      });
+      stepContainer.innerHTML = stepHtml;
+
+      document.getElementById('guideModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('guideModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function openAntiFraudModal() {
+      document.getElementById('fraudModal').classList.remove('hidden');
+    }
+
+    function closeFraudModal() {
+      document.getElementById('fraudModal').classList.add('hidden');
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+        closeFraudModal();
+      }
+    });
+
+    document.getElementById('guideModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+    document.getElementById('fraudModal').addEventListener('click', function(e) {
+      if (e.target === this) closeFraudModal();
+    });
+
+    function changeLanguage(langKey) {
+      if (!translations[langKey]) return;
+      currentLang = langKey;
+      const t = translations[langKey];
+
+      document.getElementById('headerNotice').innerHTML = t.headerNotice;
+      document.getElementById('scamAlertBtnText').textContent = t.scamAlertBtnText;
+      document.getElementById('heroTitle').innerHTML = t.heroTitle;
+      document.getElementById('heroSubtitle').textContent = t.heroSubtitle;
+      document.getElementById('searchInput').placeholder = t.searchPlaceholder;
+      document.getElementById('brandSubTag').textContent = t.brandSubTag;
+
+      renderCategoryPills();
+      renderCatalog();
+    }
+  </script>
+
+</body>
+</html>
